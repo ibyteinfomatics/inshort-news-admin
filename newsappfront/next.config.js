@@ -14,17 +14,17 @@ module.exports = {
   },
   // http://tradesapi.ibyteworkshop.com/
   env: {
-    baseApiUrl: 'http://localhost:4500/',
-    baseImgUrl: 'http://localhost:4500/', 
+    baseApiUrl: 'https://news-api-up0y.onrender.com/',
+    baseImgUrl: 'https://news-api-up0y.onrender.com/', 
   },
   publicRuntimeConfig: {
     apiUrl:
       process.env.NODE_ENV == 'development'
-        ? 'http://localhost:4500/' // development api
-        : 'http://localhost:4500/', // production api
+        ? 'https://news-api-up0y.onrender.com/' // development api
+        : 'https://news-api-up0y.onrender.com/', // production api
   },
   images: {
     loader: 'imgix',
-    path: 'http://localhost:4500/', // production api ,
+    path: 'https://news-api-up0y.onrender.com/', // production api ,
   },
 };
